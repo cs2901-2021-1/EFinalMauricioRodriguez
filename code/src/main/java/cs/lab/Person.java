@@ -3,12 +3,12 @@ package cs.lab;
 public class Person {
     private int age;
     private int appliedDosis = 0;
-    private int ID;
+    private int id;
 
-    public Person(int ID,int age) {
+    public Person(int id, int age) {
         this.age = age;
         this.appliedDosis = 1;
-        this.ID = ID;
+        this.id = id;
     }
 
     public int getAge() {
@@ -29,11 +29,11 @@ public class Person {
         }
     }
 
-    public int getID() {
-        return ID;
+    public int getId() {
+        return id;
     }
 
-    public void setID(int ID) {
-        this.ID = ID;
+    public void setId(int id) {
+        this.id = id;
     }
 }

@@ -3,20 +3,20 @@ package cs.lab;
 import java.util.List;
 
 public class VaccinationCenter {
-    int ID;
+    int id;
     String location;
     List<Person> personasVacunadas;
 
-    public void setNewPersona(int ID,int age){
-        personasVacunadas.add(new Person(ID,age));
+    public void setNewPersona(int id,int age){
+        personasVacunadas.add(new Person(id,age));
     }
 
-    public int getID() {
-        return ID;
+    public int getId() {
+        return id;
     }
 
-    public void setID(int ID) {
-        this.ID = ID;
+    public void setId(int id) {
+        this.id = id;
     }
 
     public String getLocation() {
@@ -35,16 +35,16 @@ public class VaccinationCenter {
         this.personasVacunadas = personasVacunadas;
     }
 
-    public void applySecondVaccine(int ID){
+    public void applySecondVaccine(int id){
         for (Person persona:personasVacunadas){
-            if (persona.getID() == ID){
+            if (persona.getId() == id){
                 persona.setAppliedDosis();
             }
         }
     }
 
-    public VaccinationCenter(int ID,String location){
-        this.ID = ID;
+    public VaccinationCenter(int id,String location){
+        this.id = id;
         this.location = location;
     }
 
