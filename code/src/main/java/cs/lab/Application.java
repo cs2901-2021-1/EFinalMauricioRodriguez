@@ -6,7 +6,7 @@ import java.util.logging.Logger;
 
 public class Application {
     Scanner capt = new Scanner(System.in);
-    static final Logger logger = Logger.getLogger(Final.class.getName());
+    static final Logger logger = Logger.getLogger(Application.class.getName());
     private static Application instance = null;
     List<VaccinationCenter> vaccinationCenters;
     private Application(){
@@ -57,19 +57,19 @@ public class Application {
 
     public void run(){
         int opciones;
-        do{
-            logger.info("Escoja entre las opciones: ");
-            logger.info("(1) Dar de alta un centro");
-            logger.info("(2) Dar de alta un centro");
-            logger.info("(3) Obtener numeros de centros de vacunacion");
-            logger.info("(4) Numero de personas vacunadas parcialmente");
-            logger.info("(5) Numero de personas vacunadas totalmente");
-            logger.info("(6) Salir del programa");
-            opciones = capt.nextInt();
-            switch (opciones){
-                case 1:
-            }
-        }while(opciones != 6);
+        logger.info("Escoja entre las opciones: ");
+        logger.info("(1) Dar de alta un centro");
+        logger.info("(2) Dar de alta un centro");
+        logger.info("(3) Obtener numeros de centros de vacunacion");
+        logger.info("(4) Numero de personas vacunadas parcialmente");
+        logger.info("(5) Numero de personas vacunadas totalmente");
+        logger.info("(6) Salir del programa");
+        opciones = capt.nextInt();
+        switch (opciones){
+            case 4: getPartialVaccinations();
+            case 5: getTotalVaccinations();
+            default: opciones = 6;
+        }
     }
 
 }
