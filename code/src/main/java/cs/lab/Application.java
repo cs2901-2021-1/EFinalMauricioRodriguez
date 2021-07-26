@@ -67,8 +67,10 @@ public class Application {
         opciones = capt.nextInt();
         switch (opciones){
             case 4: getPartialVaccinations();
+            break;
             case 5: getTotalVaccinations();
-            default: opciones = 6;
+            break;
+            default: deleteVaccinationCenter(2);
         }
     }
 

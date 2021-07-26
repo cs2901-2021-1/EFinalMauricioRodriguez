@@ -22,7 +22,7 @@ public class Login {
             String reverse = input1.toString();
             logged = userName.equals(reverse);
         }
-        while(logged = false);
+        while(!logged);
         Application app = Application.getInstance();
         app.run();
     }
