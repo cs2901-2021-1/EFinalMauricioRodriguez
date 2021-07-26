@@ -9,7 +9,7 @@
     <properties>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
-        <sonar.projectKey></sonar.projectKey>
+        <sonar.projectKey>cs2901-2021-1_EFinalMauricioRodriguez</sonar.projectKey>
         <sonar.organization>cs2901-2021-1</sonar.organization>
         <sonar.host.url>https://sonarcloud.io</sonar.host.url>
     </properties>
